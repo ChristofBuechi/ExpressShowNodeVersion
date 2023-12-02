@@ -11,8 +11,10 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | ba
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN source ~/.bashrc
-
+RUN nvm install 18
+RUN nvm install 19
+RUN nvm install 20
+RUN nvm install 21
 RUN nvm install --lts
 
 # Kopiere die package.json- und package-lock.json-Dateien, um die Abhängigkeiten zu installieren
