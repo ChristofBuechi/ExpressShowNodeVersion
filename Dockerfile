@@ -13,13 +13,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 RUN source ~/.bashrc
 
-# ENV NVM_DIR /usr/local/nvm
-
-RUN echo $PATH
-
 RUN nvm install --lts
-
-# ENV PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # Kopiere die package.json- und package-lock.json-Dateien, um die Abhängigkeiten zu installieren
 COPY package*.json ./

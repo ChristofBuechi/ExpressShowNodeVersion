@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo $PATH
+source ~/.bashrc
 
 npm install
 
